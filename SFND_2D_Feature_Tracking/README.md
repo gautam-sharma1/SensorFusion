@@ -2,7 +2,23 @@
 
 <img src="images/keypoints.png" width="820" height="248" />
 
-Task 1-6 completed in the src folder.
+#Task 1 Data Buffer Optimization
+Ring buffer was implemented as std::deque.
+
+#Task 2 Keypoint Detection
+Harris detector implemented with non-maximum suppression. Other detectors implemented in plain open-cv.
+
+#Task 3 Keypoint Removal
+Keypoint outside of Rect are erased from vector.
+
+#Task 4 Keypoint Descriptors
+BRIEF, ORB, FREAK, AKAZE and SIFT descriptors are implemented.
+
+#Task 5 Descriptor Matching
+FLANN matching and k-nearest neighbor selection are impplemented.
+
+#Task 6 Descriptor Distance Ratio
+Descriptor distance ratio test is implemented.
 
 #Task 7 : count the number of keypoints on the preceding vehicle for all 10 images
 |            | # of Keypoints | Time(ms) |
