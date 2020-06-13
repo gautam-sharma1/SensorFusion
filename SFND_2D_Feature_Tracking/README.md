@@ -2,25 +2,25 @@
 
 <img src="images/keypoints.png" width="820" height="248" />
 
-#Task 1 Data Buffer Optimization
+# Task 1 Data Buffer Optimization
 Ring buffer was implemented as std::deque.
 
-#Task 2 Keypoint Detection
+# Task 2 Keypoint Detection
 Harris detector implemented with non-maximum suppression. Other detectors implemented in plain open-cv.
 
-#Task 3 Keypoint Removal
+# Task 3 Keypoint Removal
 Keypoint outside of Rect are erased from vector.
 
-#Task 4 Keypoint Descriptors
+# Task 4 Keypoint Descriptors
 BRIEF, ORB, FREAK, AKAZE and SIFT descriptors are implemented.
 
-#Task 5 Descriptor Matching
+# Task 5 Descriptor Matching
 FLANN matching and k-nearest neighbor selection are impplemented.
 
-#Task 6 Descriptor Distance Ratio
+# Task 6 Descriptor Distance Ratio
 Descriptor distance ratio test is implemented.
 
-#Task 7 : count the number of keypoints on the preceding vehicle for all 10 images
+# Task 7 : count the number of keypoints on the preceding vehicle for all 10 images
 |            | # of Keypoints | Time(ms) |
 |------------|----------------|----------|
 | Shi-Tomasi | 1370           | 22.7936  |
@@ -96,7 +96,7 @@ Descriptor distance ratio test is implemented.
 
 <img src="fig1.jpg" width="820" height="500" />
 
-#Task 8 : number of matched keypoints for all 10 images using all possible combinations of detectors and descriptors. 
+# Task 8 : number of matched keypoints for all 10 images using all possible combinations of detectors and descriptors. 
 
 | Descriptors combination | Match Count |
 |-------------------------|-------------|
@@ -130,7 +130,7 @@ Descriptor distance ratio test is implemented.
 | HARRIS-FREAK            | 128         |
 
 
-#Task 9 : time it takes for keypoint detection and descriptor extraction
+# Task 9 : time it takes for keypoint detection and descriptor extraction
 | Descriptors combination | Time       |
 |-------------------------|------------|
 | FAST-BRIEF:             | 0.00339893 |
@@ -163,7 +163,7 @@ Descriptor distance ratio test is implemented.
 | BRISK-BRISK:            | 0.955101   |
 
 
-Top 3 combinations are FAST-BRIEF, FAST-ORB, ORB-BRIEF.
+## Top 3 combinations are FAST-BRIEF, FAST-ORB, ORB-BRIEF.
 
 
 See the classroom instruction and code comments for more details on each of these parts. Once you are finished with this project, the keypoint matching part will be set up and you can proceed to the next lesson, where the focus is on integrating Lidar points and on object detection using deep-learning. 
